@@ -31,7 +31,7 @@
 
     <persistence-unit name="Postgre2">
 
-        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <class>br.com.ilima.domain.jpa.ClienteJpa</class>
         <class>br.com.ilima.domain.jpa.ProdutoJpa</class>
@@ -57,7 +57,7 @@
 
     <persistence-unit name="Mysql1">
 
-        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <class>br.com.ilima.domain.jpa.ClienteJpa2</class>
 
@@ -67,7 +67,7 @@
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" /> <!-- DB Driver -->
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/vendas_online" /> <!-- BD Mane -->
             <property name="javax.persistence.jdbc.user" value="admin" /> <!-- DB User -->
-            <property name="javax.persistence.jdbc.password" value="admin" /> <!-- DB Password -->
+            <property name="javax.persistence.jdbc.password" value="isac2003$$$" /> <!-- DB Password -->
 
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/> <!-- DB Dialect -->
             <property name="hibernate.hbm2ddl.auto" value="update" /> <!-- create / create-drop / update -->
